@@ -20,8 +20,8 @@ const Checkout = () => {
   const [orderPlaced, setOrderPlaced] = useState(false);
 
   const handlePlaceOrder = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    setOrderPlaced(true); // Update state to indicate order has been placed
+    e.preventDefault(); 
+    setOrderPlaced(true); 
   };
 
   return (

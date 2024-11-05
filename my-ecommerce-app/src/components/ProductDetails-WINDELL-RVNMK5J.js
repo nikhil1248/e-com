@@ -27,8 +27,7 @@ import axios from 'axios';
     updateSidebar(cart);
     toggleSidebar(); 
     
-    // Log the updated cart state after it has been updated
-    // This will reflect the correct state of the cart
+   
     console.log('Cart after adding:', cart);
   };
 

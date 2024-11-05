@@ -24,7 +24,7 @@ const Navbar = ({ toggleSidebar, isLoggedIn, onLogout }) => {
   // };
 
   const handleCartIconClick = () => {
-    setShowSidebar(prevShowSidebar => !prevShowSidebar); // Use functional form of setState
+    setShowSidebar(prevShowSidebar => !prevShowSidebar); 
   };
   
 

@@ -12,7 +12,7 @@ import Checkout from './components/Checkout';
 
 const updateSidebar = (cart) => {
   if (cart.length > 0) {
-    toggleSidebar();
+    // toggleSidebar();
   }
 };
 
@@ -61,20 +61,18 @@ const App = () => {
         quantity: updatedCart[existingProductIndex].quantity + 1
       };
       setCart(updatedCart);
-      updateSidebar(); // Call the updateSidebar function after updating the cart state
+      updateSidebar(); 
     } else {
       setCart([...cart, { product, quantity: 1 }]);
       updateSidebar();
-      props.toggleSidebar();  // Call the updateSidebar function after updating the cart state
+      toggleSidebar();  
     }
   };
   const handleLogin = (username) => {
-    // Perform login logic, e.g., set isLoggedIn to true
     setIsLoggedIn(true);
   };
 
   const handleLogout = () => {
-    // Perform logout logic, e.g., set isLoggedIn to false
     setIsLoggedIn(false);
   };
 
